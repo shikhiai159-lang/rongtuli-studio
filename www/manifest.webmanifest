@@ -1,0 +1,11 @@
+{
+  "name": "রঙতুলি স্টুডিও",
+  "short_name": "রঙতুলি",
+  "lang": "bn",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f7f5ff",
+  "theme_color": "#7157e8",
+  "description": "শিশুদের আঁকা, ইংরেজি phonics, বাংলা বর্ণ ও সংখ্যা শেখার অ্যাপ",
+  "icons": []
+}

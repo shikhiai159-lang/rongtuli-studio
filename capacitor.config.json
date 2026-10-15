@@ -1,0 +1,9 @@
+{
+  "appId": "com.rongtuli.studio",
+  "appName": "রঙতুলি স্টুডিও",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": false
+  }
+}

@@ -1,0 +1,9 @@
+রঙতুলি স্টুডিও Android-ready package
+
+Source web app: rongtuli_studio_500/index.html
+Capacitor web output: www/
+Android app ID: com.rongtuli.studio
+Build type: GitHub Actions-generated debug APK
+Workflow: .github/workflows/build-android-apk.yml
+
+নোট: APK সরাসরি ZIP-এর ভিতরে নেই। এটি GitHub Actions-এ workflow সফলভাবে চালানোর পরে Artifacts থেকে ডাউনলোড করতে হবে।

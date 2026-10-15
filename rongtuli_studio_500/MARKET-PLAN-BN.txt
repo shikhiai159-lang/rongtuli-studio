@@ -1,0 +1,38 @@
+রঙতুলি — বাজার যাচাই ও বিক্রির পরিকল্পনা (১৫ অক্টোবর ২০২৬)
+
+প্রতিযোগী অ্যাপের প্রকাশ্য তালিকা দেখে পর্যবেক্ষণ:
+1) ছোটদের বাংলা শেখা — Google Play-এ 1M+ downloads, 4.3 rating ও 5.68K reviews দেখানো হয়েছে; তালিকায় rhyme, drawing, বাংলা সংখ্যা, শব্দভাণ্ডার ও নানা বিষয় রয়েছে। লিংক: https://play.google.com/store/apps/details?id=com.rks.preschoolbengali
+2) আমার বর্ণমালা — 100K+ downloads; বর্ণ, ট্রেসিং, সংখ্যা, rhyme, গল্প, drawing ও quiz-এর মতো বিষয় তালিকাভুক্ত। লিংক: https://play.google.com/store/apps/details?id=com.annaaba.amarbornomala
+3) Bengali Alphabet Trace & Learn — guided tracing ও phonetic sounds; কিছু সুবিধা in-app purchase-এর পেছনে। লিংক: https://play.google.com/store/apps/details?id=com.w3villa.kids.bengali.alphabet.traceandlearn.bangla.bornomala.writing
+4) Bangla Alphabet - শিশু শিক্ষা — 1M+ downloads; বাংলা/ইংরেজি/আরবি বর্ণ, সংখ্যা, rhyme ও drawing-এর কথা বলা হয়েছে। লিংক: https://play.google.com/store/apps/details?id=com.binary.banglaalphabet
+
+বাজার থেকে শিক্ষা:
+- বাংলা বর্ণ, অডিও, ট্রেসিং, অফলাইন ব্যবহার, ছবি, কুইজ—এসব একা আর স্বতন্ত্র USP নয়; প্রতিযোগীদের মধ্যেও আছে।
+- রঙতুলির সম্ভাব্য প্যাকেজিং পার্থক্য: ৫০০টি drawing topic catalog + guided drawing + free drawing studio + বাংলা/ইংরেজি অক্ষর ও সংখ্যা অনুশীলন + প্রতিটি পাঠে অভিভাবকের নিজস্ব রেকর্ড করা অডিও + নিজের আঁকার গ্যালারি + ছোট ছবি-চেনার কুইজ, একই সহজ বাংলা ইন্টারফেসে।
+- সতর্কতা: ৫০০টি বিষয়ের সবকটির জন্য আলাদা পেশাদার step-by-step illustration নেই; কিছু একই আকৃতি-পরিবারের নির্দেশনা পুনর্ব্যবহার করে। বিজ্ঞাপনে “৫০০টি সম্পূর্ণ আলাদা ধাপে আঁকা” দাবি করবেন না।
+
+মূল্য পরীক্ষার প্রস্তাব (যাচাইকৃত বাজার-গড় নয়):
+- প্রথম 10–20 জন beta পরিবার: বিনামূল্যে বা ₹49–₹99 feedback offer; আগে ইনস্টলেশন/অডিও/ডেটা সেভ যাচাই করুন।
+- প্রাথমিক paid test: ₹99 এককালীন, কেবল যদি ডেমো ও ইনস্টলেশন নির্ভরযোগ্য হয়।
+- ₹199 পরীক্ষা করুন তখনই, যখন ব্যবহারকারী সাক্ষ্য/ফিডব্যাক এবং ভালো retention পাওয়া যায়। ₹299+ দাবি করতে হলে অতিরিক্ত সত্যিকারের মান, স্থায়ী ব্যাকআপ, উন্নত পাঠ্যক্রম ও সহায়তা লাগবে।
+
+বিজ্ঞাপন পরীক্ষা:
+1) আগে বিনামূল্যে 3টি demo reel বানান: touch-to-draw, নিজের কণ্ঠে অক্ষর রেকর্ড ও replay, আঁকা save/gallery + quiz.
+2) 10–20 জন অভিভাবককে সরাসরি ব্যবহার করিয়ে লিখিত feedback নিন।
+3) তারপর মোট ₹500–₹750-এর সীমিত Meta Ads test করুন; একসঙ্গে একাধিক creative পরীক্ষা করুন। প্রতি paid customer-এর খরচ (CAC) হিসাব করুন।
+4) যদি প্রতি বিক্রির বিজ্ঞাপন খরচ বিক্রিমূল্যের চেয়ে বেশি হয়, বিজ্ঞাপন থামিয়ে অফার/ডেমো/পণ্য ঠিক করুন। কোনো বিক্রি বা লাভ নিশ্চিত নয়।
+
+বিক্রির আগে বাধ্যতামূলক QA তালিকা:
+- Android Chrome-এ প্রথম চালু, portrait/landscape, ছোট পর্দা ও touch test.
+- drawing lesson tap করলে workspace-এ smooth scroll.
+- audio record, stop/autosave, page refresh/reopen, অন্য অক্ষরে যাওয়া, upload, playback, delete; অনুমতি প্রত্যাখ্যান করলে পরিষ্কার বার্তা.
+- browser data clear/low storage-এর ক্ষেত্রে সতর্কতা; গুরুত্বপূর্ণ অডিও/ছবির export/backup ব্যবস্থা.
+- IndexedDB ও localStorage browser data clear হলে ডেটা হারাতে পারে; “চিরকাল থাকবে” দাবি করবেন না.
+- অ্যাপটি এখন web/PWA prototype, Android APK নয়; PWA install-এর জন্য HTTPS hosting লাগে. APK চাইলে Android wrapper/build, signing, install testing আলাদা কাজ.
+- শিশুদের গোপনীয়তা নীতি, অভিভাবকের সম্মতি, কপিরাইট/লাইসেন্স, refund/support, privacy policy ও clear product description তৈরি করুন.
+
+প্রথম বিক্রির পেজে যা দেখাবেন:
+- 30–45 সেকেন্ডের আসল screen recording; fake review/claim নয়.
+- ঠিক কী আছে, কী নেই, ফোনে কীভাবে খুলবে, অফলাইনে কোন অংশ চলে, অডিও কোথায় থাকে—সব পরিষ্কার লিখুন.
+- APK/ওয়েব অ্যাপের ইনস্টল পদ্ধতি, compatible browser, support contact, refund terms.
+- প্রথমে “চিরস্থায়ী অডিও” বা “শিশু নিশ্চিতভাবে পড়তে শিখবে” ধরনের গ্যারান্টি দেবেন না.
