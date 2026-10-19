@@ -76,3 +76,8 @@ bash scripts/termux-push.sh
 - GitHub Actions build চালাতে GitHub-এর usage limits ও repository permissions প্রযোজ্য।
 - মূল অ্যাপটি single-file HTML; এই প্যাকেজে মূল UI নতুন করে লেখা হয়নি। Web app-এর কোনো ত্রুটি থাকলে সেটি আলাদাভাবে ঠিক করতে হবে।
 - Android-এর native feature (যেমন push notification, billing বা file-system integration) নিজে থেকে যোগ হয় না; প্রয়োজন হলে আলাদা implementation লাগবে।
+
+
+## মাইক্রোফোন পারমিশন প্যাচ
+
+এই ZIP-এর GitHub Actions workflow build করার আগে `scripts/patch-android-mic-permission.py` চালায়। এটি manifest permission যোগ করে এবং Android-এর runtime microphone permission prompt যোগ করে, কিন্তু Capacitor-এর `BridgeActivity` রেখে দেয়। প্রথমবার অ্যাপ চালু হলে Microphone → Allow নির্বাচন করুন। যদি আগে অনুমতি প্রত্যাখ্যান করে থাকেন, Android Settings → Apps → RongTuli Studio → Permissions → Microphone থেকে Allow করুন। বাস্তব ফোনে APK ইনস্টল করে রেকর্ডিং পরীক্ষা করা জরুরি।
