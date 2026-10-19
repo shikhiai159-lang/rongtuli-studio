@@ -1,0 +1,7 @@
+RongTuli Studio — Microphone permission source patch
+
+এই প্যাচ AndroidManifest.xml-এ android.permission.RECORD_AUDIO যোগ করে এবং GitHub Actions build-এর আগে চালানো হয়।
+
+গুরুত্বপূর্ণ: এটি Android permission declaration ঠিক করে; WebView-এর getUserMedia/recording flow সব ফোনে কাজ করছে কি না, তা বাস্তব Android ডিভাইসে পরীক্ষা করা আবশ্যক। Permission prompt না এলে MainActivity/WebChromeClient handling-ও যোগ/পরীক্ষা করতে হবে।
+
+Build: ZIP extract → GitHub repository-তে সব ফাইল upload → Actions → Build Android APK → Run workflow → artifact থেকে APK download।
