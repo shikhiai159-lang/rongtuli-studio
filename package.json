@@ -1,6 +1,6 @@
 {
   "name": "rongtuli-studio",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": true,
   "description": "Rongtuli Studio Bengali kids drawing and learning PWA wrapped for Android with Capacitor",
   "scripts": {

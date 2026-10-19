@@ -29,6 +29,11 @@ jobs:
           java-version: '21'
       - name: Install JavaScript dependencies
         run: npm install
+      - name: Verify canonical microphone source
+        run: |
+          test -s www/index.html
+          grep -q '1.0.5-mic-diagnostic' www/index.html
+          ! grep -q 'মাইক্রোফোন চালু হয়নি—ব্রাউজারের অনুমতি দিন।' www/index.html
       - name: Generate Android project
         run: npx cap add android
       - name: Sync web app into Android project

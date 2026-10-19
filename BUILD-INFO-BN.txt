@@ -1,17 +1,6 @@
-রঙতুলি স্টুডিও Android-ready package — v4
+RongTuli Studio Android source — v1.0.5
 
-Canonical web app: www/index.html (একমাত্র index.html)
-Android app ID: com.rongtuli.studio
-Build type: GitHub Actions-generated debug APK
-Workflow: .github/workflows/build-android-apk.yml
+Android build source: www/index.html (single canonical HTML).
+Build: GitHub → Actions → Build Android APK → Run workflow. Download the artifact named rongtuli-studio-debug-apk.
 
-মাইক্রোফোন:
-- AndroidManifest.xml-এ RECORD_AUDIO এবং MODIFY_AUDIO_SETTINGS যোগ করা হয়।
-- Capacitor-এর BridgeWebChromeClient WebView-এর AUDIO_CAPTURE permission request-টি সামলায়।
-- অ্যাপের Android runtime permission চাইলে Allow দিতে হবে।
-- HTML error status-এ নির্দিষ্ট কারণ দেখানোর চেষ্টা করা হয়েছে।
-
-APK build ও বাস্তব ফোনে পরীক্ষা না করা পর্যন্ত কাজ নিশ্চিত বলা যাবে না।
-
-
-সংশোধন v5: অ্যাপ খোলার সঙ্গে সঙ্গে Android permission prompt আর জোর করে দেখানো হয় না। ব্যবহারকারী রেকর্ড বোতাম চাপলে Capacitor WebView getUserMedia-এর মাধ্যমে অনুমতি চাইবে। Manifest-এ RECORD_AUDIO ও MODIFY_AUDIO_SETTINGS দুটিই রাখা হয়েছে।
+এই পরিবেশে Android SDK/বাস্তব ফোন সংযুক্ত না থাকায় APK build/install করে hardware microphone test করা হয়নি। সোর্সের static validation করা হয়েছে; বাস্তব ডিভাইস টেস্টের দাবি করা হচ্ছে না।

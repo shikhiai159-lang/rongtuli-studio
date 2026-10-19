@@ -1,17 +1,7 @@
-RongTuli Studio — Microphone Fix v4
+RongTuli Studio 1.0.5 — Microphone diagnostic update
 
-একটিমাত্র canonical HTML রাখা হয়েছে: www/index.html। rongtuli_studio_500/index.html
-মুছে দেওয়া হয়েছে, যাতে পুরনো কপি নিয়ে বিভ্রান্তি না হয়।
+এই আপডেটে Android APK-এর জন্য একমাত্র HTML entry হলো www/index.html। Native APK-তে service worker নিবন্ধন বন্ধ করা হয়েছে, যাতে পুরোনো cached HTML থেকে আগের error message না আসে। PWA service worker cache key v8 করা হয়েছে।
 
-Android build script এখন RECORD_AUDIO ও MODIFY_AUDIO_SETTINGS দুটোই নিশ্চিত করে।
-Capacitor-এর BridgeWebChromeClient WebView-এর AUDIO_CAPTURE permission request-টি
-নিজে runtime permission prompt দিয়ে সামলায়। তাই MainActivity থেকে আলাদা করে app launch-এ
-permission চাওয়ার প্রয়োজন নেই; এতে duplicate prompt এড়ানো যায়।
+Android manifest-এ RECORD_AUDIO এবং MODIFY_AUDIO_SETTINGS থাকা নিশ্চিত করতে build workflow চালায় scripts/patch-android-mic-permission.py। Capacitor-এর BridgeWebChromeClient getUserMedia-এর AUDIO_CAPTURE অনুরোধে runtime permission নিয়ে থাকে।
 
-HTML-এর recording error handling-ও আপডেট করা হয়েছে, যাতে অনুমতি প্রত্যাখ্যান, API অনুপস্থিতি
-এবং অন্যান্য ত্রুটির জন্য বাংলা বার্তা আসে।
-
-গুরুত্বপূর্ণ: ZIP তৈরি হওয়া মানেই APK test হয়েছে এমন নয়। GitHub Actions-এ build সফল করে
-ফোনে ইনস্টল করে Microphone permission Allow দিয়ে পরীক্ষা করতে হবে।
-
-গুরুত্বপূর্ণ v5: পুরোনো APK-এর permission state আটকে থাকতে পারে। নতুন APK ইনস্টল করার আগে পুরোনো অ্যাপ uninstall করলে তার লোকাল ডেটা মুছে যেতে পারে; দরকারি ডেটা থাকলে আগে ব্যাকআপ নিন। বিকল্পভাবে Android Settings → Apps → RongTuli Studio → Permissions → Microphone-এ গিয়ে Allow দিন। নতুন APK-তে Record বোতাম চাপলে permission prompt আসা উচিত।
+গুরুত্বপূর্ণ: সোর্স/ZIP পরীক্ষা করা আর বাস্তব ফোনে APK পরীক্ষা করা এক জিনিস নয়। এই ZIP-এ APK আগে থেকে build করা নেই। GitHub Actions-এ নতুন APK তৈরি করে পুরোনো অ্যাপ আনইনস্টল করে নতুন APK ইনস্টল করুন। নতুন APK-তেও সমস্যা থাকলে exact error name (NotAllowedError / NotReadableError / GET_USER_MEDIA_UNAVAILABLE) দেখাবে; সেটি দেখে পরবর্তী সংশোধন করতে হবে।
