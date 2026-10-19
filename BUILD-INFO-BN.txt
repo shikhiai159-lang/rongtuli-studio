@@ -1,6 +1,7 @@
-RongTuli Studio Android source — v1.0.5
+RongTuli Studio Android source — v1.1.0 English Premium Recorder
 
-Android build source: www/index.html (single canonical HTML).
-Build: GitHub → Actions → Build Android APK → Run workflow. Download the artifact named rongtuli-studio-debug-apk.
+This ZIP contains source files, not a compiled APK. Build using GitHub Actions → Build Android APK → Run workflow, then download the APK artifact.
 
-এই পরিবেশে Android SDK/বাস্তব ফোন সংযুক্ত না থাকায় APK build/install করে hardware microphone test করা হয়নি। সোর্সের static validation করা হয়েছে; বাস্তব ডিভাইস টেস্টের দাবি করা হচ্ছে না।
+English UI, updated app branding, recording timer and explicit Stop & Save control, and basic SEO metadata have been added. Bengali characters/words remain in Bengali where they are the lesson content.
+
+Static validation can be performed here, but no Android SDK or physical device is connected, so a real-device microphone test is not claimed.

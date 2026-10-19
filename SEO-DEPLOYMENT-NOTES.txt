@@ -1,0 +1,11 @@
+RongTuli Studio — SEO and deployment notes (v1.1.0)
+
+This build includes an English document language, title, meta description, application name, Open Graph/Twitter metadata and SoftwareApplication structured data.
+
+Important: metadata does not guarantee a 100% SEO score or Google rankings. The Android APK itself is not indexed like a website. For web indexing, deploy www/ to a public HTTPS domain, then add a canonical URL using that real domain, generate a sitemap.xml containing the real public URLs, publish robots.txt, verify the site in Google Search Console, and test with Lighthouse/PageSpeed and Google Rich Results Test. Do not use placeholder canonical URLs.
+
+The Bengali alphabet/word content is intentionally kept in Bengali where it is part of the lesson being taught. The app navigation and general controls are translated to English; some descriptive educational copy or lesson dataset strings may still need a human English-language review.
+
+Audio recording controls: tap Start Recording, watch the red RECORDING indicator and timer, then tap the red Stop & Save button. The recording is saved locally in the device/browser storage and can be played back.
+
+Testing: static source validation only; this package is source, not a compiled APK. A physical Android microphone test has not been performed in this environment.
