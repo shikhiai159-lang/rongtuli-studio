@@ -1,0 +1,11 @@
+{
+  "appId": "com.shikhiai.rongtulistudio",
+  "appName": "Rongtuli",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "adjustMarginsForEdgeToEdge": "auto"
+  }
+}

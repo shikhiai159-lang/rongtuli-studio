@@ -1,0 +1,26 @@
+{
+  "name": "rongtuli-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rongtuli Studio Android app built with Capacitor",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check:config": "node scripts/validate-project.cjs",
+    "check:js": "node scripts/check-inline-js.cjs",
+    "check": "npm run check:config && npm run check:js",
+    "android:patch": "python3 scripts/patch-android.py",
+    "android:sync": "cap sync android",
+    "android:build": "cd android && ./gradlew --no-daemon assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "7.4.3",
+    "@capacitor/core": "7.4.3",
+    "@capacitor/filesystem": "^7.0.0",
+    "@capacitor/share": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "7.4.3"
+  }
+}
